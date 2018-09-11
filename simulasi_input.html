@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>HomeSpeak</title>
+    </head>
+    <body>
+        <h2>Simulasi Log IO</h2>
+        <form action="log_io.php" method="get">
+            <label for="time">Time</label>
+            <input type="text" id="time" name="time"><br>
+            <label for="id">ID Controller</label>
+            <input type="text" id="id" name="id"><br>
+            <label for="data">Data IO</label>
+            <input type="text" id="data" name="data"><br>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+        <h2>Simulasi Log Extender</h2>
+        <form action="log_ext.php" method="get">
+            <label for="time">Time</label>
+            <input type="text" id="time" name="time"><br>
+            <label for="id">ID Controller</label>
+            <input type="text" id="id" name="id"><br>
+            <label for="ext_no">Extender Number</label>
+            <select id="ext_no" name="ext_no">
+                <option value="1">Extender 1</option>
+                <option value="2">Extender 2</option>
+                <option value="3">Extender 3</option>
+                <option value="4">Extender 4</option>
+            </select><br>
+            <label for="type">Extender Type</label>
+            <select id="type" name="type">
+                <option value="rfid_door">RFID Lock Door</option>
+                <option value="security_camera">Security Camera</option>
+            </select><br>
+            <label for="data">Data Extender</label>
+            <input type="text" id="data" name="data"><br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
